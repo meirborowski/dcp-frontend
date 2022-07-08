@@ -1,15 +1,20 @@
 import './App.css';
-import { useTranslation } from 'react-i18next';
-import Header from './components/Header';
+import HomePage from './pages/HomePage';
+import EducationPage from './pages/EducationPage';
+import {
+  Routes,
+  Route,
+} from "react-router-dom";
 
 function App() {
-
-  const { t } = useTranslation();
 
 
   return (
     <div className="App">
-      <Header Title={t('header_title')} pageTitle="Home" withLogo />
+      <Routes>
+        <Route index element={<HomePage />} />
+        <Route path="education" element={<EducationPage />} />
+      </Routes>
     </div>
   );
 }

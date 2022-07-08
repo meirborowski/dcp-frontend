@@ -1,9 +1,20 @@
 import React from 'react';
-import "./Header.css";
+import "./css/Header.css";
+import IconButton from './IconButton';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { AiOutlineSearch } from 'react-icons/ai';
+import { IoIosArrowBack } from 'react-icons/io';
+import { useNavigate } from 'react-router-dom';
 
-function Header({ pageTitle, Title, withLogo = false }) {
+function Header({ pageTitle, Title = '', withLogo = false }) {
+    const navigate = useNavigate();
+
+    const goBack = (e) => {
+        e.preventDefault();
+        navigate(-1);
+    }
+
+
     return (
         <header className={withLogo ? 'header-with-logo' : 'header'}>
             {/* show only if with logo is true */}
@@ -17,7 +28,14 @@ function Header({ pageTitle, Title, withLogo = false }) {
 
             <div className='header-bottom'>
                 <div className='header-bottom-left'>
-                    <GiHamburgerMenu size={20} />
+                    {withLogo ?
+                        <IconButton onClick={e => e.preventDefault()}>
+                            <GiHamburgerMenu size={27} />
+                        </IconButton>
+                        :
+                        <IconButton onClick={goBack}>
+                            <IoIosArrowBack size={27} onClick={goBack} />
+                        </IconButton>}
                     <h2 className='page-title'>{pageTitle}</h2>
                 </div>
                 <div className='header-bottom-middle'>
@@ -27,7 +45,7 @@ function Header({ pageTitle, Title, withLogo = false }) {
                 </div>
                 <div className='header-bottom-right'>
                     <div></div>
-                    <AiOutlineSearch size={20} />
+                    <AiOutlineSearch size={25} />
                 </div>
             </div>
         </header>

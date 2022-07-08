@@ -16,11 +16,6 @@
     z-index: 100;
 }
 
-.logo {
-    /* max-width: 90vw; */
-    /* height: 100px; */
-}
-
 .header-top {
     height: 100px;
 }
@@ -35,10 +30,12 @@
 
 .header-bottom-left {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 15vw;
+    width: 20vw;
     margin-right: 30px;
+}
+
+.header-bottom-left>* {
+    margin-right: 10px;
 }
 
 .header-bottom-center {
@@ -52,16 +49,16 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 15vw;
+    width: 20vw;
     margin-left: 30px;
 }
 
 .header-title {
-    font-size: 3vw;
+    font-size: calc(20px + 0.5vw);
     font-weight: bold;
 }
 
 .page-title {
-    font-size: 3.6vw;
+    font-size: calc(20px + 0.5vw);
     font-weight: bold;
 }
