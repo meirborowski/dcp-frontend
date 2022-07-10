@@ -30,11 +30,17 @@
 
 .card-title {
     flex: 0.3;
+    display: block;
     font-size: 1.5rem;
+    width: fit-content;
 }
 
 .card-title>h3 {
     font-size: 1.6rem;
     font-weight: bold;
     margin: 0;
+}
+
+.card-subtitle {
+    font-size: calc(1rem + 0.5vw);
 }

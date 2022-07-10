@@ -16,11 +16,20 @@ function AgriculturePage() {
         },
         {
             id: 2,
-            title: 'ReMèDe',
-            subtitle: '',
-            icon: 'remede.png',
+            title: 'Booster',
+            subtitle: 'vos cultures',
+            icon: 'supplant.png',
             onClick: () => {
-                window.open('http://192.168.100.1:8099/en/learn/#/topics/t/12535ec378184bf18c8272618ebbc91b/folders?last=HOME', '_blank');
+                console.log('clicked gov');
+            }
+        },
+        {
+            id: 3,
+            title: 'Protégez',
+            subtitle: 'vos cultures',
+            icon: 'agrio.png',
+            onClick: () => {
+                console.log('clicked gov');
             }
         }
     ];
