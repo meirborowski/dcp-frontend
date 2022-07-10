@@ -1,5 +1,6 @@
 import './App.css';
 import HomePage from './pages/HomePage';
+import HealthPage from './pages/HealthPage';
 import EducationPage from './pages/EducationPage';
 import {
   Routes,
@@ -13,6 +14,7 @@ function App() {
     <div className="App">
       <Routes>
         <Route index element={<HomePage />} />
+        <Route path="health" element={<HealthPage />} />
         <Route path="education" element={<EducationPage />} />
       </Routes>
     </div>

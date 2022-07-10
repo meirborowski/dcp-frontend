@@ -1,4 +1,8 @@
 .App {
   text-align: center;
-  height: 200vh;
+}
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
 }
