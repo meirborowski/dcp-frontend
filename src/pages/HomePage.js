@@ -12,7 +12,7 @@ function HomePage() {
     const cards = [
         {
             id: 1,
-            title: 'Gouvernement',
+            title: t('gouvernment_card_title'),
             subtitle: '',
             icon: 'gov.png',
             onClick: () => {
@@ -21,7 +21,7 @@ function HomePage() {
         },
         {
             id: 2,
-            title: 'Média',
+            title: t('media_card_title'),
             subtitle: '',
             icon: 'media.png',
             onClick: () => {
@@ -30,7 +30,7 @@ function HomePage() {
         },
         {
             id: 3,
-            title: 'Santé',
+            title: t('health_card_title'),
             subtitle: '',
             icon: 'health.png',
             onClick: () => {
@@ -39,7 +39,7 @@ function HomePage() {
         },
         {
             id: 4,
-            title: 'Agriculture',
+            title: t('agriculture_card_title'),
             subtitle: '',
             icon: 'agriculture.png',
             onClick: () => {
@@ -48,7 +48,7 @@ function HomePage() {
         },
         {
             id: 5,
-            title: 'Éducation',
+            title: t('education_card_title'),
             subtitle: '',
             icon: 'education.png',
             onClick: () => {
@@ -57,7 +57,7 @@ function HomePage() {
         },
         {
             id: 6,
-            title: 'Bibliothèque',
+            title: t('library_card_title'),
             subtitle: '',
             icon: 'duddal.png',
             onClick: () => {
@@ -66,7 +66,7 @@ function HomePage() {
         },
         {
             id: 7,
-            title: 'Khan Academy',
+            title: t('khan_academy_card_title'),
             subtitle: '',
             icon: 'itu.png',
             onClick: () => {
@@ -82,7 +82,7 @@ function HomePage() {
         },
         {
             id: 8,
-            title: 'ODK collecte',
+            title: t('odk_collecte_card_title'),
             subtitle: '',
             icon: 'itu.png',
             onClick: () => {

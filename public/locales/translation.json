@@ -4,5 +4,13 @@
     "home_page": "Home",
     "agriculture_page": "Agriculture",
     "education_page": "Education",
-    "health_page": "Santé"
+    "health_page": "Santé",
+    "gouvernment_card_title": "Gouvernement",
+    "media_card_title": "Média",
+    "health_card_title": "Santé",
+    "agriculture_card_title": "Agriculture",
+    "education_card_title": "Éducation",
+    "library_card_title": "Bibliothèque",
+    "khan_academy_card_title": "Khan Academy",
+    "odk_collecte_card_title": "ODK Collect"
 }
