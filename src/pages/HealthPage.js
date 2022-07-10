@@ -1,8 +1,10 @@
 import React from 'react';
 import Header from '../components/Header';
 import CardsGrid from '../components/CardsGrid';
+import { useTranslation } from 'react-i18next';
 
 function HealthPage() {
+    const { t } = useTranslation();
 
     const cards = [
         {
@@ -27,7 +29,7 @@ function HealthPage() {
 
     return (
         <>
-            <Header pageTitle="Santé" />
+            <Header pageTitle={t('health_page')} />
             <main className="health-page">
                 <CardsGrid cards={cards} />
             </main>

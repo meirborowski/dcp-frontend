@@ -1,3 +1,8 @@
 {
-    "header_title": "Platforme Digitalisation Communautaire"
+    "lang": "fr",
+    "header_title": "Platforme Digitalisation Communautaire",
+    "home_page": "Home",
+    "agriculture_page": "Agriculture",
+    "education_page": "Education",
+    "health_page": "Santé"
 }

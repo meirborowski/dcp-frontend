@@ -1,8 +1,10 @@
 import React from 'react';
 import Header from '../components/Header';
 import CardsGrid from '../components/CardsGrid';
+import { useTranslation } from 'react-i18next';
 
 function AgriculturePage() {
+    const { t } = useTranslation();
 
     const cards = [
         {
@@ -36,7 +38,7 @@ function AgriculturePage() {
 
     return (
         <>
-            <Header pageTitle="Agriculture" />
+            <Header pageTitle={t('agriculture_page')} />
             <main className="agriculture-page">
                 <CardsGrid cards={cards} />
             </main>

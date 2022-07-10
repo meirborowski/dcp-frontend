@@ -54,7 +54,7 @@ function EducationPage() {
 
     return (
         <>
-            <Header pageTitle="Education" />
+            <Header pageTitle={t('education_page')} />
             <main className="education-page">
                 <CardsGrid cards={cards} />
             </main>

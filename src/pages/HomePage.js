@@ -100,7 +100,7 @@ function HomePage() {
 
     return (
         <>
-            <Header Title={t('header_title')} pageTitle="Home" withLogo />
+            <Header Title={t('header_title')} pageTitle={t('home_page')} withLogo />
             <main className="home-page">
                 <CardsGrid cards={cards} />
             </main>

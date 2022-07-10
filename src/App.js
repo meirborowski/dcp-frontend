@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import './App.css';
 import HomePage from './pages/HomePage';
 import HealthPage from './pages/HealthPage';
@@ -7,8 +8,16 @@ import {
   Routes,
   Route,
 } from "react-router-dom";
+import { useTranslation } from 'react-i18next';
 
 function App() {
+
+  const { t } = useTranslation();
+
+  useEffect(() => {
+    // change language
+    document.querySelector('html').setAttribute('lang', t('lang'));
+  }, [t]);
 
 
   return (
