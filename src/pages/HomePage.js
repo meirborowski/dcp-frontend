@@ -25,7 +25,7 @@ function HomePage() {
             subtitle: '',
             icon: 'media.png',
             onClick: () => {
-                window.open('http://192.168.100.1/', '_blank');
+                navigate('/media');
             }
         },
         {
