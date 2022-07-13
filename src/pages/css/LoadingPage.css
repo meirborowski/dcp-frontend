@@ -14,6 +14,14 @@
     color: #fff;
 }
 
+.loading-page-content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 .loading-page-row {
     display: flex;
     flex-direction: row;
@@ -21,6 +29,10 @@
     justify-content: center;
 
     max-width: 100vw;
+
+    margin: 0;
+
+    max-height: 18vh;
 }
 
 .loading-page-col {
@@ -31,6 +43,11 @@
     max-height: 25vh;
 }
 
+.loading-page-row>h1 {
+    margin: 1vh 0 0 0;
+}
+
 .loading-page-row>h2 {
     font-size: 2rem;
+    margin: 1vh 0 0 0;
 }
