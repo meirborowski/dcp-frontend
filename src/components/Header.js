@@ -11,7 +11,7 @@ function Header({ pageTitle, Title = '', withLogo = false }) {
 
     const goBack = (e) => {
         e.preventDefault();
-        navigate('/');
+        navigate('/home');
     }
 
 
