@@ -12,7 +12,7 @@ function MediaCard({ title, image, video }) {
 
     return (
         <div className="media-card" onClick={handleClick}>
-            <VideoPlayer url={video} isOpen={playing} onClose={handleClick} />
+            {playing && <VideoPlayer url={video} isOpen={playing} onClose={handleClick} />}
             <div className="media-card-image">
                 <img src={image} alt={title} />
             </div>
