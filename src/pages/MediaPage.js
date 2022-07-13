@@ -13,7 +13,7 @@ function MediaPage({ categories }) {
         <>
             <Header Title={t('header_title')} pageTitle={t('media_card_title')} />
             <main className="media-page">
-                <MediaNav categories={categories} />
+                {/* <MediaNav categories={categories} /> */}
                 <Outlet />
             </main>
         </>
