@@ -31,10 +31,6 @@
     max-height: 25vh;
 }
 
-.loading-page-row>h1 {
-    /* font-size: 2.5rem; */
-}
-
 .loading-page-row>h2 {
     font-size: 2rem;
 }
