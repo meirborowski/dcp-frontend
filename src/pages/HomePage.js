@@ -25,7 +25,7 @@ function HomePage() {
             subtitle: '',
             icon: 'media.png',
             onClick: () => {
-                navigate('/media');
+                navigate('/media/films');
             }
         },
         {

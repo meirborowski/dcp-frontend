@@ -2,9 +2,11 @@ import React from 'react';
 import Header from '../components/Header';
 import CardsGrid from '../components/CardsGrid';
 import { useTranslation } from 'react-i18next';
+import { useNavigate } from 'react-router-dom';
 
 function AgriculturePage() {
     const { t } = useTranslation();
+    const navigate = useNavigate();
 
     const cards = [
         {
@@ -13,7 +15,7 @@ function AgriculturePage() {
             subtitle: '',
             icon: 'media.png',
             onClick: () => {
-                console.log('clicked gov');
+                navigate('/media/agriculture');
             }
         },
         {

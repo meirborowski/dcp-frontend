@@ -2,29 +2,40 @@ import React from 'react';
 import Header from '../components/Header';
 import { useTranslation } from 'react-i18next';
 import CardsGrid from '../components/CardsGrid';
+import { useNavigate } from 'react-router-dom';
 
 function EducationPage() {
     const { t } = useTranslation();
+    const navigate = useNavigate();
 
     const cards = [
         {
             id: 1,
-            title: 'Smile & Learn',
+            title: 'Media',
             subtitle: '',
-            icon: 'seal.png',
+            icon: 'media.png',
             onClick: () => {
-                const url = "intent://clever.khanacademykids.org/#Intent;scheme=https;package=org.khankids.android;end";
-
-                if (navigator.userAgent.toLowerCase().indexOf('android') > -1) {
-                    window.location.href = url;
-                }
-                else {
-                    alert("You must be using an Android device to launch the app.");
-                }
+                navigate('/media/education');
             }
         },
         {
             id: 2,
+            title: 'Smile & Learn',
+            subtitle: '',
+            icon: 'seal.png',
+            onClick: () => {
+                // const url = "intent://clever.khanacademykids.org/#Intent;scheme=https;package=org.khankids.android;end";
+
+                // if (navigator.userAgent.toLowerCase().indexOf('android') > -1) {
+                //     window.location.href = url;
+                // }
+                // else {
+                //     alert("You must be using an Android device to launch the app.");
+                // }
+            }
+        },
+        {
+            id: 3,
             title: 'Écoles local',
             subtitle: '',
             icon: 'bird.png',
@@ -33,7 +44,7 @@ function EducationPage() {
             }
         },
         {
-            id: 3,
+            id: 4,
             title: 'Agriculture',
             subtitle: '',
             icon: 'bird.png',
@@ -42,7 +53,7 @@ function EducationPage() {
             }
         },
         {
-            id: 4,
+            id: 5,
             title: 'Hygiene',
             subtitle: '',
             icon: 'bird.png',
