@@ -13,6 +13,7 @@ import
 } from "react-router-dom";
 import { useTranslation } from 'react-i18next';
 import MediaCategory from './components/MediaCategory';
+import LiveMedia from './components/LiveMedia';
 
 function App()
 {
@@ -49,7 +50,7 @@ function App()
         <Route path="media" element={<MediaPage categories={categories} />}>
           {
             categories.map(category => (
-              <Route key={category} path={`/media/${category.toLowerCase().split(' ')[0]}`} element={<MediaCategory category={category} />} />
+              <Route key={category} path={`/media/${category.toLowerCase().split(' ')[0]}`} element={category === 'live tv' ? <LiveMedia /> : <MediaCategory category={category} />} />
             ))
           }
         </Route>
