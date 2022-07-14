@@ -5,7 +5,8 @@ import CardsGrid from '../components/CardsGrid';
 import { useNavigate } from "react-router-dom";
 
 
-function HomePage() {
+function HomePage()
+{
     const { t } = useTranslation();
     const navigate = useNavigate();
 
@@ -15,8 +16,9 @@ function HomePage() {
             title: t('gouvernment_card_title'),
             subtitle: '',
             icon: 'gov.png',
-            onClick: () => {
-                console.log('clicked gov');
+            onClick: () =>
+            {
+                navigate('/media/economie');
             }
         },
         {
@@ -24,7 +26,8 @@ function HomePage() {
             title: t('media_card_title'),
             subtitle: '',
             icon: 'media.png',
-            onClick: () => {
+            onClick: () =>
+            {
                 navigate('/media/films');
             }
         },
@@ -33,7 +36,8 @@ function HomePage() {
             title: t('health_card_title'),
             subtitle: '',
             icon: 'health.png',
-            onClick: () => {
+            onClick: () =>
+            {
                 navigate('/health');
             }
         },
@@ -42,7 +46,8 @@ function HomePage() {
             title: t('agriculture_card_title'),
             subtitle: '',
             icon: 'agriculture.png',
-            onClick: () => {
+            onClick: () =>
+            {
                 navigate('/agriculture');
             }
         },
@@ -51,7 +56,8 @@ function HomePage() {
             title: t('education_card_title'),
             subtitle: '',
             icon: 'education.png',
-            onClick: () => {
+            onClick: () =>
+            {
                 navigate('/education');
             }
         },
@@ -60,7 +66,8 @@ function HomePage() {
             title: t('library_card_title'),
             subtitle: '',
             icon: 'duddal.png',
-            onClick: () => {
+            onClick: () =>
+            {
                 window.open('http://192.168.100.1:8111/', '_blank');
             }
         },
@@ -69,13 +76,16 @@ function HomePage() {
             title: t('khan_academy_card_title'),
             subtitle: '',
             icon: 'itu.png',
-            onClick: () => {
+            onClick: () =>
+            {
                 const url = "intent://clever.khanacademykids.org/#Intent;scheme=https;package=org.khankids.android;end";
 
-                if (navigator.userAgent.toLowerCase().indexOf('android') > -1) {
+                if (navigator.userAgent.toLowerCase().indexOf('android') > -1)
+                {
                     window.location.href = url;
                 }
-                else {
+                else
+                {
                     alert("You must be using an Android device to launch the app.");
                 }
             }
@@ -85,13 +95,16 @@ function HomePage() {
             title: t('odk_collecte_card_title'),
             subtitle: '',
             icon: 'itu.png',
-            onClick: () => {
+            onClick: () =>
+            {
                 const url = "intent://clever.khanacademykids.org/#Intent;scheme=https;package=org.khankids.android;end";
 
-                if (navigator.userAgent.toLowerCase().indexOf('android') > -1) {
+                if (navigator.userAgent.toLowerCase().indexOf('android') > -1)
+                {
                     window.location.href = url;
                 }
-                else {
+                else
+                {
                     alert("You must be using an Android device to launch the app.");
                 }
             }
