@@ -1,12 +1,13 @@
 import React from 'react';
 import Header from '../components/Header';
-import MediaNav from '../components/MediaNav';
+// import MediaNav from '../components/MediaNav';
 import { useTranslation } from 'react-i18next';
 import { Outlet } from 'react-router-dom';
 
 
 
-function MediaPage({ categories }) {
+function MediaPage({ categories })
+{
     const { t } = useTranslation();
 
     return (

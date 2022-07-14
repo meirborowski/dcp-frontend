@@ -6,31 +6,35 @@ import EducationPage from './pages/EducationPage';
 import AgriculturePage from './pages/AgriculturePage';
 import MediaPage from './pages/MediaPage';
 import LoadingPage from './pages/LoadingPage';
-import {
+import
+{
   Routes,
   Route,
 } from "react-router-dom";
 import { useTranslation } from 'react-i18next';
 import MediaCategory from './components/MediaCategory';
 
-function App() {
+function App()
+{
   const [categories, setCategories] = useState([]);
 
   const { t } = useTranslation();
 
-  useEffect(() => {
+  useEffect(() =>
+  {
     // change language
     document.querySelector('html').setAttribute('lang', t('lang'));
   }, [t]);
 
-  useEffect(() => {
-    fetch('http://dcp2022.ddns.net:40000/category/list')
+  useEffect(() =>
+  {
+    fetch('http://192.168.100.1:40000/category/list')
       .then(response => response.json())
-      .then(data => {
+      .then(data =>
+      {
         setCategories(data);
       }
       );
-    // setCategories(["Agriculture", "Economy", "Education", "Films", "health"]);
   }, []);
 
 

@@ -3,15 +3,18 @@ import './css/LoadingPage.css';
 import { useTranslation } from 'react-i18next';
 import { useNavigate } from 'react-router-dom';
 
-function LoadingPage() {
+function LoadingPage()
+{
     const { t } = useTranslation();
     const navigate = useNavigate();
 
-    // useEffect(() => {
-    //     setTimeout(() => {
-    //         navigate('/home');
-    //     }, 3000);
-    // }, [navigate]);
+    useEffect(() =>
+    {
+        setTimeout(() =>
+        {
+            navigate('/home');
+        }, 3000);
+    }, [navigate]);
 
     return (
         <div className="loading-page">
