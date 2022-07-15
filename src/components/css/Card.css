@@ -8,8 +8,7 @@
     align-items: center;
     border-radius: 10px;
     transition: all .3s ease 0s;
-    /* max-width: 300px; */
-    max-height: 200px;
+    max-height: 150px;
     color: #fff;
 }
 
@@ -30,17 +29,36 @@
 
 .card-title {
     flex: 0.3;
-    display: block;
-    font-size: 1.5rem;
+    display: inline-block;
+    font-size: fit-content;
     width: fit-content;
 }
 
 .card-title>h3 {
-    font-size: 1.6rem;
+    display: inline-block;
+    font-size: 1.2rem;
     font-weight: bold;
     margin: 0;
 }
 
+@media (max-width: 768px) {
+    .card-title>h3 {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .card-title>h3 {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .card-title>h3 {
+        font-size: 0.95rem;
+    }
+}
+
 .card-subtitle {
-    font-size: calc(1rem + 0.5vw);
+    font-size: fit-content;
 }
